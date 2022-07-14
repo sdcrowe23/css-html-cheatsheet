@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(90deg, #f46b45 0%, #eea849 100%);
+}
+
+/* =================================== COPY RELATED =================================== */
+
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f46b45 0%, #eea849 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f46b45 0%, #eea849 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+code, p, span {
+    font-size: 16px;
+}
+
+p {
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+h1:after {
+  content: " ";
+  display: block;
+  background-color: #cacaca;
+  width: 53px;
+  height: 3px;
+  margin: 15px 0;
+}
+
+.sub-title {
+  margin-bottom: 25px;
+  color: #cacaca;
+}
+
+.sub-title span {
+  margin-right: 4px;
+  text-transform: uppercase;
+}
+
+.table-title {
+  margin-left: 12px;
+  margin-bottom: 15px;
+}
+
+/* =================================== COPY RELATED END =================================== */
+
+/* =================================== CARD =================================== */
+
+.card {
+  max-width: 1200px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  min-height: 700px;
+}
+
+.card-container {
+  padding: 68px 55px;
+}
+
+.card-container p {
+  width: 75%;
+}
+
+/* =================================== CARD END =================================== */
+
+/* =================================== TABLE =================================== */
+
+table {
+  border: 1px solid #cacaca;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.table-container {
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.table-syntax {
+  margin-bottom: 20px;
+}
+
+.syntax {
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+.inline,
+.block,
+.inline-block {
+  font-family: monospace;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.pill {
+  background: linear-gradient(90deg, #f46b45 0%, #eea849 100%);
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 2px;
+}
+
+.table-description {
+    margin-bottom: 20px;
+}
+
+.el-description {
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.html-elements td code {
+    background: linear-gradient(90deg, #f46b45 0%, #eea849 100%);
+    display: inline-block;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 2px;
+}
+
+/* =================================== TABLE END =================================== */

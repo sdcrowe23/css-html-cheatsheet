@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>CSS Display Property</title>
+  </head>
+
+  <body>
+    <!-- 
+      
+      1. Your project should document at least one HTML or CSS topic.
+      2. Your site uses HTML tables to display the documentation. Be sure to label the columns in your HTML.
+      3. Your site should utilize a custom color scheme
+      4. Your site should use custom styles for any code such as HTML tags (like <h1>) or CSS properties or values (like font-family). Represent code using a monospace font family and a different background color.
+    
+    -->
+
+    <div class="card">
+      <div class="card-container">
+        <h1>Display</h1>
+        <p>
+          The display property specifies the display behavior (the type of
+          rendering box) of an element and is the most important element for
+          layout.
+        </p>
+        <!-- SYNTAX TABLE -->
+        <div class="table-container">
+          <h2 class="table-title">Syntax</h2>
+          <!-- TABLE -->
+          <table class="table-syntax">
+            <tbody>
+              <!-- ROW 1 -->
+              <tr class="syntax">
+                <td span="3"><code>display: value;</code></td>
+              </tr>
+              <!-- ROW 1 END -->
+            </tbody>
+          </table>
+          <!-- TABLE END -->
+        </div>
+        <!-- SYNTAX TABLE END -->
+        <!--  -->
+        <div class="table-container">
+          <h2 class="table-title">Description</h2>
+          <table class="table-description">
+            <!-- Table HEAD -->
+            <thead>
+              <tr>
+                <th>Value</th>
+                <th>Description</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <!-- Table HEAD END -->
+            <tbody>
+              <!-- ROW 1 -->
+              <tr>
+                <td>Inline</td>
+                <td class="el-description">
+                  Displays an element as an inline element (like
+                  <code>&lt;span&gt;</code>). Any height and width properties
+                  will have no effect
+                </td>
+                <td>
+                  <span class="pill inline">Inline 1</span>
+                  <span class="pill inline">Inline 2</span>
+                </td>
+              </tr>
+              <!-- ROW 1 End -->
+              <!-- ROW 2 -->
+              <tr>
+                <td>Block</td>
+                <td class="el-description">
+                  Displays an element as a block element (like
+                  <code>&lt;p&gt;</code>). It starts on a new line, and takes up
+                  the whole width available.
+                </td>
+                <td>
+                  <span class="pill block">Block 1</span>
+                  <span class="pill block">Block 2</span>
+                </td>
+              </tr>
+              <!-- ROW 2 End -->
+              <!-- ROW 3 -->
+              <tr>
+                <td>Inline-block</td>
+                <td class="el-description">
+                  Displays an element as an inline-level block container. The
+                  element itself is formatted as an inline element, but you can
+                  apply height and width values
+                </td>
+                <td>
+                  <span class="pill inline-block">Inline-block 1</span>
+                  <span class="pill inline-block">Inline-block 2</span>
+                </td>
+              </tr>
+              <!-- ROW 3 End -->
+            </tbody>
+          </table>
+        </div>
+        <!-- HTML ELEMENTS TABLE -->
+        <div class="table-container html-elements">
+          <h2 class="table-title examples">Example HTML Tags</h2>
+          <!-- TABLE START -->
+          <table>
+            <!-- TABLE HEAD -->
+            <thead>
+              <tr>
+                <th>Display</th>
+                <th>HTML Elements</th>
+              </tr>
+            </thead>
+            <!-- TABLE HEAD END -->
+            <!-- TABLE BODY -->
+            <tbody>
+              <!-- ROW 1 -->
+              <tr>
+                <td>Inline elements</td>
+                <td>
+                  <code>&lt;span&gt;</code>
+                  <code>&lt;a&gt;</code>
+                  <code>&lt;img&gt;</code>
+                </td>
+              </tr>
+              <!-- ROW 1 END -->
+              <!-- ROW 2 -->
+              <tr>
+                <td>Block elements</td>
+                <td>
+                  <!-- TURN THESE INTO LINKS -->
+                  <code>&lt;address&gt;</code> <code>&lt;article&gt;</code>
+                  <code>&lt;aside&gt;</code> <code>&lt;blockquote&gt;</code>
+                  <code>&lt;canvas&gt;</code> <code>&lt;dd&gt;</code>
+                  <code>&lt;div&gt;</code> <code>&lt;dl&gt;</code>
+                  <code>&lt;dt&gt;</code> <code>&lt;fieldset&gt;</code>
+                  <code>&lt;figcaption&gt; </code> <code>&lt;figure&gt;</code>
+                  <code>&lt;footer&gt; </code> <code>&lt;form&gt;</code>
+                  <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>
+                  <code>&lt;header&gt;</code> <code>&lt;hr&gt;</code>
+                  <code>&lt;li&gt;</code> <code>&lt;main&gt;</code>
+                  <code>&lt;nav&gt;</code> <code>&lt;noscript&gt;</code>
+                  <code>&lt;ol&gt;</code> <code>&lt;p&gt;</code>
+                  <code>&lt;pre&gt;</code> <code>&lt;section&gt;</code>
+                  <code>&lt;table&gt;</code> <code>&lt;tfoot&gt;</code>
+                  <code>&lt;ul&gt;</code> <code>&lt;video&gt;</code>
+                </td>
+              </tr>
+              <!-- ROW 2 END -->
+              <!-- ROW 3 -->
+              <tr>
+                <td>Inline-block elements</td>
+                <td>
+                  <!-- TURN THESE INTO LINKS -->
+                  <code>&lt;a&gt;</code><code>&lt;abbr&gt;</code
+                  ><code>&lt;acronym&gt;</code><code>&lt;b&gt;</code
+                  ><code>&lt;bdo&gt;</code><code>&lt;big&gt;</code
+                  ><code>&lt;br&gt;</code><code>&lt;button&gt;</code
+                  ><code>&lt;cite&gt;</code><code>&lt;code&gt;</code
+                  ><code>&lt;dfn&gt;</code><code>&lt;em&gt;</code
+                  ><code>&lt;i&gt;</code><code>&lt;img&gt;</code
+                  ><code>&lt;input&gt;</code><code>&lt;kbd&gt;</code
+                  ><code>&lt;label&gt;</code><code>&lt;map&gt;</code
+                  ><code>&lt;object&gt;</code><code>&lt;output&gt;</code
+                  ><code>&lt;q&gt;</code><code>&lt;samp&gt;</code
+                  ><code>&lt;script&gt;</code><code>&lt;select&gt;</code
+                  ><code>&lt;small&gt;</code><code>&lt;span&gt;</code
+                  ><code>&lt;strong&gt;</code><code>&lt;sub&gt;</code
+                  ><code>&lt;sup&gt;</code><code>&lt;textarea&gt;</code
+                  ><code>&lt;time&gt;</code><code>&lt;tt&gt;</code
+                  ><code>&lt;var&gt;</code>
+                </td>
+              </tr>
+              <!-- ROW 3 END -->
+            </tbody>
+            <!-- TABLE BODY END -->
+          </table>
+          <!-- TABLE END -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
